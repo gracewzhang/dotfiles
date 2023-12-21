@@ -1,0 +1,33 @@
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.lint]
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # flake8-unused-arguments
+  "ARG",
+  # isort
+  "I",
+]
+ignore = ["E117", "E114"]
+
+[tool.ruff.format]
+# Prefer single quotes over double quotes
+quote-style = "single"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = true
